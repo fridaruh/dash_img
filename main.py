@@ -60,7 +60,7 @@ if uploaded_file is not None:
     st.write("")
     st.write("Classifying a X Ray Image - Normal Vs Pneumonia.........hold tight")
 
-    label = teachable_machine_classification(image, './converted_savedmodel/model.savedmodel/saved_model.pb')
+    label = teachable_machine_classification(image, './converted_savedmodel/model.savedmodel/')
     if label == 1:
         st.write("This X ray looks like having pneumonia.It has abnormal opacification.Needs further investigation by a Radiologist/Doctor.")
     else:
